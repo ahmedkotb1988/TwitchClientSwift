@@ -1,0 +1,6 @@
+framework module Pods_TwitchClient {
+  umbrella header "Pods-TwitchClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

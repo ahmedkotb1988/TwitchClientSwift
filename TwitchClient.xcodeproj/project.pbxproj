@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41D71B8BEB399D81093F31B4 /* Pods_TwitchClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20035B83909BB730BFE1681B /* Pods_TwitchClient.framework */; };
+		EC0C42FE1E97F4290024317A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C42FD1E97F4290024317A /* AppDelegate.swift */; };
+		EC0C43031E97F4290024317A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0C43011E97F4290024317A /* Main.storyboard */; };
+		EC0C43051E97F4290024317A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0C43041E97F4290024317A /* Assets.xcassets */; };
+		EC0C43081E97F4290024317A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0C43061E97F4290024317A /* LaunchScreen.storyboard */; };
+		EC0C43131E97F4290024317A /* TwitchClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C43121E97F4290024317A /* TwitchClientTests.swift */; };
+		EC0C431E1E97F4290024317A /* TwitchClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C431D1E97F4290024317A /* TwitchClientUITests.swift */; };
+		EC0C432C1E97F4D60024317A /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C432B1E97F4D60024317A /* GamesListViewController.swift */; };
+		EC0C432E1E97F77C0024317A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C432D1E97F77C0024317A /* Game.swift */; };
+		EC0C43301E97FB070024317A /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C432F1E97FB060024317A /* WebServiceManager.swift */; };
+		EC0C43321E9830F90024317A /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C43311E9830F90024317A /* Stream.swift */; };
+		EC1940E01E9A64B70021F19B /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1940DF1E9A64B70021F19B /* Channel.swift */; };
+		EC1940E21E9AAC800021F19B /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1940E11E9AAC800021F19B /* GamesTableViewCell.swift */; };
+		EC1940E41E9AB3AD0021F19B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1940E31E9AB3AD0021F19B /* Image.swift */; };
+		EC1940E61E9B76730021F19B /* StreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1940E51E9B76730021F19B /* StreamsViewController.swift */; };
+		EC1940E81E9B7F240021F19B /* StreamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1940E71E9B7F240021F19B /* StreamsTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC0C430F1E97F4290024317A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0C42F21E97F4280024317A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC0C42F91E97F4280024317A;
+			remoteInfo = TwitchClient;
+		};
+		EC0C431A1E97F4290024317A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0C42F21E97F4280024317A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC0C42F91E97F4280024317A;
+			remoteInfo = TwitchClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20035B83909BB730BFE1681B /* Pods_TwitchClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF8F2C3A8030E8D6D342B7F /* Pods-TwitchClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchClient/Pods-TwitchClient.debug.xcconfig"; sourceTree = "<group>"; };
+		EC0C42FA1E97F4290024317A /* TwitchClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0C42FD1E97F4290024317A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC0C43021E97F4290024317A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC0C43041E97F4290024317A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC0C43071E97F4290024317A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC0C43091E97F4290024317A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC0C430E1E97F4290024317A /* TwitchClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitchClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0C43121E97F4290024317A /* TwitchClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchClientTests.swift; sourceTree = "<group>"; };
+		EC0C43141E97F4290024317A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC0C43191E97F4290024317A /* TwitchClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitchClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0C431D1E97F4290024317A /* TwitchClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchClientUITests.swift; sourceTree = "<group>"; };
+		EC0C431F1E97F4290024317A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC0C432B1E97F4D60024317A /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
+		EC0C432D1E97F77C0024317A /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EC0C432F1E97FB060024317A /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		EC0C43311E9830F90024317A /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		EC1940DF1E9A64B70021F19B /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		EC1940E11E9AAC800021F19B /* GamesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
+		EC1940E31E9AB3AD0021F19B /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		EC1940E51E9B76730021F19B /* StreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsViewController.swift; sourceTree = "<group>"; };
+		EC1940E71E9B7F240021F19B /* StreamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsTableViewCell.swift; sourceTree = "<group>"; };
+		F620C0F5B65E15A63E9C32EF /* Pods-TwitchClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchClient/Pods-TwitchClient.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC0C42F71E97F4280024317A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D71B8BEB399D81093F31B4 /* Pods_TwitchClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0C430B1E97F4290024317A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0C43161E97F4290024317A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7662088C3B7143B84CC0F477 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AF8F2C3A8030E8D6D342B7F /* Pods-TwitchClient.debug.xcconfig */,
+				F620C0F5B65E15A63E9C32EF /* Pods-TwitchClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A694A1DC60830345E068E4B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20035B83909BB730BFE1681B /* Pods_TwitchClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC0C42F11E97F4280024317A = {
+			isa = PBXGroup;
+			children = (
+				EC0C42FC1E97F4290024317A /* TwitchClient */,
+				EC0C43111E97F4290024317A /* TwitchClientTests */,
+				EC0C431C1E97F4290024317A /* TwitchClientUITests */,
+				EC0C42FB1E97F4290024317A /* Products */,
+				7662088C3B7143B84CC0F477 /* Pods */,
+				A694A1DC60830345E068E4B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC0C42FB1E97F4290024317A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC0C42FA1E97F4290024317A /* TwitchClient.app */,
+				EC0C430E1E97F4290024317A /* TwitchClientTests.xctest */,
+				EC0C43191E97F4290024317A /* TwitchClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC0C42FC1E97F4290024317A /* TwitchClient */ = {
+			isa = PBXGroup;
+			children = (
+				EC0C42FD1E97F4290024317A /* AppDelegate.swift */,
+				EC1940EA1E9BB1C70021F19B /* Managers */,
+				EC1940E91E9BB1C00021F19B /* Model */,
+				EC1940EB1E9BB1D50021F19B /* Games List View Controller */,
+				EC1940EC1E9BB1F50021F19B /* Streams List View Controller */,
+				EC0C43011E97F4290024317A /* Main.storyboard */,
+				EC0C43041E97F4290024317A /* Assets.xcassets */,
+				EC0C43061E97F4290024317A /* LaunchScreen.storyboard */,
+				EC0C43091E97F4290024317A /* Info.plist */,
+			);
+			path = TwitchClient;
+			sourceTree = "<group>";
+		};
+		EC0C43111E97F4290024317A /* TwitchClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC0C43121E97F4290024317A /* TwitchClientTests.swift */,
+				EC0C43141E97F4290024317A /* Info.plist */,
+			);
+			path = TwitchClientTests;
+			sourceTree = "<group>";
+		};
+		EC0C431C1E97F4290024317A /* TwitchClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC0C431D1E97F4290024317A /* TwitchClientUITests.swift */,
+				EC0C431F1E97F4290024317A /* Info.plist */,
+			);
+			path = TwitchClientUITests;
+			sourceTree = "<group>";
+		};
+		EC1940E91E9BB1C00021F19B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC0C432D1E97F77C0024317A /* Game.swift */,
+				EC0C43311E9830F90024317A /* Stream.swift */,
+				EC1940DF1E9A64B70021F19B /* Channel.swift */,
+				EC1940E31E9AB3AD0021F19B /* Image.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EC1940EA1E9BB1C70021F19B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EC0C432F1E97FB060024317A /* WebServiceManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		EC1940EB1E9BB1D50021F19B /* Games List View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC0C432B1E97F4D60024317A /* GamesListViewController.swift */,
+				EC1940E11E9AAC800021F19B /* GamesTableViewCell.swift */,
+			);
+			name = "Games List View Controller";
+			sourceTree = "<group>";
+		};
+		EC1940EC1E9BB1F50021F19B /* Streams List View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC1940E51E9B76730021F19B /* StreamsViewController.swift */,
+				EC1940E71E9B7F240021F19B /* StreamsTableViewCell.swift */,
+			);
+			name = "Streams List View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC0C42F91E97F4280024317A /* TwitchClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0C43221E97F4290024317A /* Build configuration list for PBXNativeTarget "TwitchClient" */;
+			buildPhases = (
+				E81396A9F15550BA6EB04BCB /* [CP] Check Pods Manifest.lock */,
+				EC0C42F61E97F4280024317A /* Sources */,
+				EC0C42F71E97F4280024317A /* Frameworks */,
+				EC0C42F81E97F4280024317A /* Resources */,
+				ACD6203BF13D5C4063356B23 /* [CP] Embed Pods Frameworks */,
+				36A54920619E754B2163B9BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitchClient;
+			productName = TwitchClient;
+			productReference = EC0C42FA1E97F4290024317A /* TwitchClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC0C430D1E97F4290024317A /* TwitchClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0C43251E97F4290024317A /* Build configuration list for PBXNativeTarget "TwitchClientTests" */;
+			buildPhases = (
+				EC0C430A1E97F4290024317A /* Sources */,
+				EC0C430B1E97F4290024317A /* Frameworks */,
+				EC0C430C1E97F4290024317A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC0C43101E97F4290024317A /* PBXTargetDependency */,
+			);
+			name = TwitchClientTests;
+			productName = TwitchClientTests;
+			productReference = EC0C430E1E97F4290024317A /* TwitchClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC0C43181E97F4290024317A /* TwitchClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0C43281E97F4290024317A /* Build configuration list for PBXNativeTarget "TwitchClientUITests" */;
+			buildPhases = (
+				EC0C43151E97F4290024317A /* Sources */,
+				EC0C43161E97F4290024317A /* Frameworks */,
+				EC0C43171E97F4290024317A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC0C431B1E97F4290024317A /* PBXTargetDependency */,
+			);
+			name = TwitchClientUITests;
+			productName = TwitchClientUITests;
+			productReference = EC0C43191E97F4290024317A /* TwitchClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC0C42F21E97F4280024317A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ahmed Kotb";
+				TargetAttributes = {
+					EC0C42F91E97F4280024317A = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					EC0C430D1E97F4290024317A = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC0C42F91E97F4280024317A;
+					};
+					EC0C43181E97F4290024317A = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC0C42F91E97F4280024317A;
+					};
+				};
+			};
+			buildConfigurationList = EC0C42F51E97F4280024317A /* Build configuration list for PBXProject "TwitchClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC0C42F11E97F4280024317A;
+			productRefGroup = EC0C42FB1E97F4290024317A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC0C42F91E97F4280024317A /* TwitchClient */,
+				EC0C430D1E97F4290024317A /* TwitchClientTests */,
+				EC0C43181E97F4290024317A /* TwitchClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC0C42F81E97F4280024317A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0C43081E97F4290024317A /* LaunchScreen.storyboard in Resources */,
+				EC0C43051E97F4290024317A /* Assets.xcassets in Resources */,
+				EC0C43031E97F4290024317A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0C430C1E97F4290024317A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0C43171E97F4290024317A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36A54920619E754B2163B9BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchClient/Pods-TwitchClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACD6203BF13D5C4063356B23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchClient/Pods-TwitchClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E81396A9F15550BA6EB04BCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC0C42F61E97F4280024317A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0C43301E97FB070024317A /* WebServiceManager.swift in Sources */,
+				EC1940E61E9B76730021F19B /* StreamsViewController.swift in Sources */,
+				EC1940E41E9AB3AD0021F19B /* Image.swift in Sources */,
+				EC1940E01E9A64B70021F19B /* Channel.swift in Sources */,
+				EC0C42FE1E97F4290024317A /* AppDelegate.swift in Sources */,
+				EC1940E21E9AAC800021F19B /* GamesTableViewCell.swift in Sources */,
+				EC0C432E1E97F77C0024317A /* Game.swift in Sources */,
+				EC0C432C1E97F4D60024317A /* GamesListViewController.swift in Sources */,
+				EC0C43321E9830F90024317A /* Stream.swift in Sources */,
+				EC1940E81E9B7F240021F19B /* StreamsTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0C430A1E97F4290024317A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0C43131E97F4290024317A /* TwitchClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0C43151E97F4290024317A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0C431E1E97F4290024317A /* TwitchClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC0C43101E97F4290024317A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC0C42F91E97F4280024317A /* TwitchClient */;
+			targetProxy = EC0C430F1E97F4290024317A /* PBXContainerItemProxy */;
+		};
+		EC0C431B1E97F4290024317A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC0C42F91E97F4280024317A /* TwitchClient */;
+			targetProxy = EC0C431A1E97F4290024317A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC0C43011E97F4290024317A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC0C43021E97F4290024317A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC0C43061E97F4290024317A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC0C43071E97F4290024317A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC0C43201E97F4290024317A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC0C43211E97F4290024317A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC0C43231E97F4290024317A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF8F2C3A8030E8D6D342B7F /* Pods-TwitchClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TwitchClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedKotb.TwitchClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC0C43241E97F4290024317A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F620C0F5B65E15A63E9C32EF /* Pods-TwitchClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TwitchClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedKotb.TwitchClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EC0C43261E97F4290024317A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TwitchClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedKotb.TwitchClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitchClient.app/TwitchClient";
+			};
+			name = Debug;
+		};
+		EC0C43271E97F4290024317A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TwitchClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedKotb.TwitchClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitchClient.app/TwitchClient";
+			};
+			name = Release;
+		};
+		EC0C43291E97F4290024317A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TwitchClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedKotb.TwitchClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TwitchClient;
+			};
+			name = Debug;
+		};
+		EC0C432A1E97F4290024317A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TwitchClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedKotb.TwitchClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TwitchClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC0C42F51E97F4280024317A /* Build configuration list for PBXProject "TwitchClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0C43201E97F4290024317A /* Debug */,
+				EC0C43211E97F4290024317A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0C43221E97F4290024317A /* Build configuration list for PBXNativeTarget "TwitchClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0C43231E97F4290024317A /* Debug */,
+				EC0C43241E97F4290024317A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0C43251E97F4290024317A /* Build configuration list for PBXNativeTarget "TwitchClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0C43261E97F4290024317A /* Debug */,
+				EC0C43271E97F4290024317A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0C43281E97F4290024317A /* Build configuration list for PBXNativeTarget "TwitchClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0C43291E97F4290024317A /* Debug */,
+				EC0C432A1E97F4290024317A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC0C42F21E97F4280024317A /* Project object */;
+}
