@@ -24,11 +24,6 @@ class GamesTableViewCell: UITableViewCell {
         self.imageActivityIndicator.startAnimating()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     func drawGameCellWithDetails(title: String, viewers: NSInteger, image: String)
     {

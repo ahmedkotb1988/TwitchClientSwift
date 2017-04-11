@@ -16,7 +16,7 @@ class GamesListViewController: UIViewController, WebserviceManagerDelegate, UITa
     
     
     var games = [Game]()
-    let manager = WebServiceManager()
+   
     var selectedGame = Game()
     
     override func viewDidLoad() {
@@ -30,14 +30,11 @@ class GamesListViewController: UIViewController, WebserviceManagerDelegate, UITa
         self.getTopGames()
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
    
     func getTopGames()
     {
+        // initialize webservice manager and call the web service request
+        let manager = WebServiceManager()
         manager.delegate = self
         manager.getTopGames()
     }

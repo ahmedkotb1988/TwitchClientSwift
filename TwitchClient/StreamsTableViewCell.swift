@@ -18,6 +18,7 @@ class StreamsTableViewCell: UITableViewCell {
     @IBOutlet weak var streamViewers: UILabel!
     @IBOutlet weak var streamTitle: UILabel!
     @IBOutlet weak var streamPreviewImage: UIImageView!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,11 +27,6 @@ class StreamsTableViewCell: UITableViewCell {
         self.imageActivityIndicator.startAnimating()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 
     func drawStreamCellWithDetails(title: String, viewers: NSInteger, image: String, date: String, streamer: String, language: String)
     {
@@ -49,7 +45,7 @@ class StreamsTableViewCell: UITableViewCell {
         
         //prepare date with the correct format to shape it however I want
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'hh:mm:ssZ"
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         let dateObject = formatter.date(from: date)
         formatter.dateFormat = "dd/MM/yyyy"
         self.streamDate.text = "Created: " + formatter.string(from: dateObject!)

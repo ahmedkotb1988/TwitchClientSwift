@@ -12,6 +12,7 @@ import Alamofire
 struct Constants {
     
     let clientID = "lb715ejwkdwk9b9ljrtowl1nj595kf8"
+    let baseURL = "https://api.twitch.tv/kraken/"
 }
 protocol WebserviceManagerDelegate : class {
     
@@ -28,7 +29,7 @@ class WebServiceManager: NSObject {
     {
         let constants = Constants.init()
         //prepare the URL to make sure it's valid for the request and give the required queries
-        let urlString = "https://api.twitch.tv/kraken/games/top?client_id=\(constants.clientID)&limit=5"
+        let urlString = "\(constants.baseURL)games/top?client_id=\(constants.clientID)&limit=5"
         let URL = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         
         //Begin requesting data from API URL
@@ -67,7 +68,7 @@ class WebServiceManager: NSObject {
     {
         let constants = Constants.init()
         //prepare the URL to make sure it's valid for the request and give the required queries
-        let urlString = "https://api.twitch.tv/kraken/streams?game=\(Game)&client_id=\(constants.clientID)&limit=10"
+        let urlString = "\(constants.baseURL)streams?game=\(Game)&client_id=\(constants.clientID)&limit=10"
         let URL = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         
         //Begin requesting data from API URL
