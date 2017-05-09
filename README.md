@@ -25,7 +25,7 @@ I then created the views design in the storyboard and created their classes whic
 
 I used Cocapods to integrate 3 third party libraries:
 
-1. Alamofire: which is a great HTTP networking library which enables the developer to make and HTTP request in just one line and get the response in a block without the need to write many methods.
+1. Alamofire: which is a great HTTP networking library which enables the developer to make and HTTP request in just one line and get the response in a block without the need to write many methods.   
 
 2. SDWebImage: This Library provides an async image downloader with cache support.
 
